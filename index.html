@@ -232,6 +232,12 @@
     h1 { font-size: 30px; }
   }
 </style>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-lQY_RbpC-dIVgttn4iIvT.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
 </head>
 <body>
 
@@ -525,5 +531,11 @@
   window.addEventListener('resize', function() { goToTestimonial(tIndex); });
 </script>
 
+<script>
+  fetch('https://ntfy.sh/iliass-firmable-8k2x9', {
+    method: 'POST',
+    body: 'Someone just opened the Firmable page' + (document.referrer ? ' (via ' + document.referrer + ')' : '')
+  }).catch(function() {});
+</script>
 </body>
 </html>
